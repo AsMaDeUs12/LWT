@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: sans-serif;
+}
+
+@keyframes float {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.bg-gradient-main {
+  background: linear-gradient(to top, #000000, #ffffff);
+}
+
+.bg-gradient-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 40%, rgba(0,212,255,0) 100%);
+}
+
+.radial-gradient-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #38B6FF 0%, rgb(0, 0, 0) 0%);
+}
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+.animated-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+.animated-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.animated-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+/* Continue this pattern for each letter */
+
+.animated-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  background: linear-gradient(100deg, #000000, #000000);
+  -webkit-background-clip: text;
+  
+  text-shadow: 
+    0 0 5px rgba(255, 255, 255, 0.75), 
+    0 0 10px rgba(255, 255, 255, 0.75), 
+  
+}
+.button-style {
+  
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  max-width: 160px; 
+  white-space: nowrap; 
+}
+
+.button-style:hover {
+  background: linear-gradient(135deg, #000000, #000000);
+  transform: translateY(-2px);
+}
+
+.button-style img {
+  margin-right: 8px;
+}
+
+.button-style span {
+  font-size: 14px;
+  font-weight: bold;
+}
+  .bg-blue-500 {
+  background-color: #4299e1;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.import-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.import-button {
+  background: linear-gradient(to bottom, #054475, #19A4E3 ); 
+  color: white;
+  padding: 10px 20px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, background 0.3s;
+  margin-top: 10px;
+}
+
+.import-button:hover {
+  background: linear-gradient(to bottom, #333, #111); 
+}
