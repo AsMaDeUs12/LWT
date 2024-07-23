@@ -15,18 +15,7 @@ const App = () => {
   const pointsToAdd = 1;
   const energyToReduce = 1;
 
-  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    if (energy - energyToReduce < 0) {
-      return;
-    }
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    setPoints(points + pointsToAdd);
-    setEnergy(energy - energyToReduce < 0 ? 0 : energy - energyToReduce);
-    setClicks([...clicks, { id: Date.now(), x, y }]);
-  };
+  
 
   const handleAnimationEnd = (id: number) => {
     setClicks((prevClicks) => prevClicks.filter(click => click.id !== id));
@@ -51,9 +40,7 @@ const App = () => {
   const animatedText = "LOCK WALLET".split("").map((char, index) => (
     <span key={index} style={{ animationDelay: `${index * 0.1}s` }}>{char === " " ? "\u00A0" : char}</span>
   ));
-  const animatedText1 = "Innovative cryptocurrency app".split("").map((char, index) => (
-    <span key={index} style={{ animationDelay: `${index * 0.1}s` }}>{char === " " ? "\u00A0" : char}</span>
-  ));
+
  
 
   return (
