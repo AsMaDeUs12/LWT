@@ -3,7 +3,7 @@ import './index.css';
 import { bear, coin, notcoin, trophy } from './images';
 
 const App = () => {
-  const [points, setPoints] = useState(() => {
+  const [points] = useState(() => {
     const savedPoints = localStorage.getItem('points');
     return savedPoints ? parseInt(savedPoints) : 1;
   });
@@ -12,8 +12,7 @@ const App = () => {
     return savedEnergy ? parseInt(savedEnergy) : 100;
   });
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 1;
-  const energyToReduce = 1;
+  
 
   
 
@@ -83,7 +82,7 @@ const App = () => {
           </div>
 
           <div className="import-button-container"> 
-            <p className="font-bold" style={{ textAlign: 'center', fontSize: '44px' }}>Innovative<br></br> cryptocurrency app</p><p style={{ textAlign: 'center', fontSize: '18px', color: '#C1C1C1'}} >Step into the future with Lock Wallet – your one-stop solution for managing, trading, and exchanging cryptocurrencies.<br></br>
+            <p className="font-bold" style={{ textAlign: 'center', fontSize: '44px' }}>Innovative<br></br> cryptocurrency app</p><p style={{ textAlign: 'center', fontSize: '18px', color: '#C1C1C1'}} >Step into the future with Lock Wallet – your one-stop solution for managing, trading and exchanging cryptocurrencies.<br></br>
             </p>
             <button className="import-button">Comming soon</button>
           </div>
