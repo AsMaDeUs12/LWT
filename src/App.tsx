@@ -107,9 +107,7 @@ const App = () => {
               <span>Telegram</span>
             </button></a>
           </div>
-          <div className="w-full bg-[#f9f9f9] rounded-full mt-4">
-            <div className="bg-gradient-to-r from-[#054475] to-[#054475] h-4 rounded-full" style={{ width: `${(energy / 100) * 100}%` }}></div>
-          </div>
+          
         </div>
       </div>
     </div>
