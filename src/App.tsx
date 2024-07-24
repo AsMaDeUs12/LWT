@@ -64,7 +64,7 @@ const App = () => {
             <p className="text-lg font-bold animated-text">{animatedText}</p>
           </div>
           <div className="relative flex flex-col items-center space-y-2">
-            <img src={notcoin} width={350} height={350} alt="notcoin" className="flicker-image" />
+            <img src={notcoin} width={250} height={250} alt="notcoin" className="flicker-image" />
             {clicks.map((click) => (
               <div
                 key={click.id}
@@ -82,7 +82,7 @@ const App = () => {
           </div>
 
           <div className="import-button-container"> 
-            <p className="font-bold" style={{ textAlign: 'center', fontSize: '44px' }}>Innovative<br></br> cryptocurrency app</p><p style={{ textAlign: 'center', fontSize: '18px', color: '#C1C1C1'}} >Step into the future with Lock Wallet – your one-stop solution for managing, trading and exchanging cryptocurrencies.<br></br>
+            <p className="font-bold" style={{ textAlign: 'center', fontSize: '25px' }}>Innovative<br></br> cryptocurrency app</p><p style={{ textAlign: 'center', fontSize: '10px', color: '#C1C1C1'}} >Step into the future with Lock Wallet – your one-stop solution for managing, trading and exchanging cryptocurrencies.<br></br>
             </p>
             <button className="import-button">Comming soon</button>
           </div>
